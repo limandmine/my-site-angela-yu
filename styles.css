@@ -1,0 +1,192 @@
+body{
+  margin: 0;
+  color: #40514E;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 1em;
+  /* if apply to whole body, put here: line-height: 2;, but if apply to h1, put in that container */
+}
+
+/*centering using the align property; can apply to parent or sub containers */
+/*by default the font-family is san-serif - times font, where the serif - arial, for specifying specific fonts, have fall backs from css font stack*/
+/*to ensure everyone is able to see the specific fonts you want - can embed them by going on to google fonts and copy the url link in html and font-family in css2
+font-family: 'Merriweather', serif;
+font-family: 'Sacramento', cursive;
+font-family: 'Montserrat', sans-serif; */
+
+h1{
+  margin: 50px auto 0 auto; /*can use em and % too, but px is more precise for position */
+  font-family: 'Sacramento', cursive;
+  font-size: 460%;
+  color: #66BFBF; /* 100% = 16px, to get 90px = 90/16 * 100% - 1em in parent container. else, use rem*/
+  line-height: 0.5;
+  /*centering with text-align property does not work for item with specific width, but can centered by margins with the auto function
+  width: 10%;
+  margin: 0 auto; */
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  color: #66BFBF;
+  font-weight: bold;
+}
+
+p{
+  line-height: 2;
+}
+
+hr{
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+a{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+/* padding: 10px 20px;*/
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover{
+  colour: #EAF6F6;
+}
+
+.top-container {
+  background-color: #dee3e2;
+  position: relative;
+  padding-top: 100px;
+}
+
+.top-cloud{
+  position: absolute;
+  top: 40px;
+  right:300px;
+  /*50 px from the top of div container, 300px from the right of div container */
+}
+
+.bottom-cloud{
+  position: absolute;
+  bottom: 300px;
+  left: 250px;
+  /*300px from the bottom of the div container, 300px from the left of the div container*/
+}
+
+.middle-container{
+  margin: 100px auto;
+}
+
+.intro{
+  width: 30%;
+  margin: auto;
+}
+
+.skill-row{
+  width:50%;
+  margin: 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.learning-img{
+  width:15%;
+  float:left;
+  margin-right: 30px;
+}
+
+.coaching-img{
+  width:15%;
+  float:right;
+  margin-left: 30px;
+}
+
+.profile-img{
+  width:15%;
+  margin-top: 30px;
+}
+
+.contact-msg{
+  width:40%;
+  margin: 40px auto 60px;
+}
+/*
+.super-learner-description{
+  clear: left;
+}
+
+.life-coaching-description{
+  clear: right;
+}
+*/
+
+.btn {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Montserrat', sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+.bottom-container{
+  background-color: #66BFBF;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.credentials{
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+/*to make it snap to corners by overwriting the preset margins */
+
+/* for borders you can define the style, width and color or global values*/
+
+/* style
+border: solid;
+*/
+
+/* width | style
+border: 2px dotted;
+*/
+
+/* style | color
+border: outset #f33;
+*/
+
+/* width | style | color
+border: medium dashed green;
+*/
+
+/* Global values
+border: inherit;
+border: initial;
+border: unset;
+The border property may be specified using one, two, or three of the values listed below. The order of the values does not matter.
+*/
